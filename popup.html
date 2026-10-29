@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body { width: 360px; margin: 0; font-family: system-ui, sans-serif; background: #141414; color: #eee; }
+    header { padding: 12px 14px; font-weight: 700; font-size: 15px; border-bottom: 1px solid #2a2a2a; }
+    .dash { padding: 10px 14px; border-bottom: 1px solid #2a2a2a; }
+    .dash button { width: 100%; padding: 9px; font-size: 13px; }
+    #list { max-height: 380px; overflow-y: auto; }
+    .item { padding: 10px 14px; border-bottom: 1px solid #222; }
+    .title { font-size: 13px; font-weight: 600; margin-bottom: 4px; word-break: break-word; }
+    .meta { font-size: 12px; color: #aaa; margin-bottom: 6px; }
+    .bar { height: 4px; background: #333; border-radius: 2px; overflow: hidden; margin-bottom: 8px; }
+    .bar > div { height: 100%; background: #e50914; }
+    .actions { display: flex; gap: 6px; }
+    button { cursor: pointer; border: 0; border-radius: 6px; padding: 6px 10px; font-size: 12px; font-weight: 600; background: #2e2e2e; color: #fff; }
+    button.primary { background: #e50914; }
+    button:hover { filter: brightness(1.2); }
+    .empty { padding: 24px 14px; color: #999; font-size: 13px; text-align: center; line-height: 1.5; }
+  </style>
+</head>
+<body>
+  <header>📌 Riprendi da qui</header>
+  <div class="dash"><button id="openDash" class="primary">🎬 Apri Watchlist e consigli</button></div>
+  <div id="list"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Watchlist · Riprendi da qui</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="dots"><i class="g"></i><i class="o"></i><i class="b"></i></span>
+      <b>Riprendi da qui</b>
+    </div>
+    <nav id="nav">
+      <button data-view="watchlist" class="active">Watchlist <span class="count" id="c-watchlist"></span></button>
+      <button data-view="continue">Continua a guardare</button>
+      <button data-view="watched">Visti <span class="count" id="c-watched"></span></button>
+      <button data-view="discover">Consigliati</button>
+      <button data-view="social">Amici <span class="count" id="c-online"></span></button>
+      <button data-view="settings">Impostazioni</button>
+    </nav>
+    <form id="searchForm" autocomplete="off">
+      <input id="q" type="search" placeholder="Cerca film e serie…  ( / )" />
+    </form>
+  </header>
+
+  <div id="syncbar"></div>
+  <main id="app"></main>
+
+  <dialog id="modal"></dialog>
+  <div id="toast" role="status"></div>
+
+  <footer>
+    Questo prodotto usa le API di TMDB ma non è approvato né certificato da TMDB.
+    Informazioni su dove guardare: JustWatch.
+  </footer>
+
+  <script src="tmdb.js"></script>
+  <script src="sync.js"></script>
+  <script src="filelink.js"></script>
+  <script src="backup.js"></script>
+  <script src="letterboxd.js"></script>
+  <script src="reco.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>
