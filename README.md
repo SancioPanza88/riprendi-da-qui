@@ -6,7 +6,8 @@ Estensione Chrome per [StreamingCommunity](https://streamingcommunity.work): sal
 
 [![Guarda il trailer](poster.jpg)](trailer.mp4)
 
-▶ **[Guarda il trailer (47s)](trailer.mp4)** · **[Scarica l'ultima versione](../../releases/latest)**
+▶ **[Guarda il trailer (47s)](https://voe.sx/s65xvmuucdcp
+)** · **[Scarica l'ultima versione](../../releases/latest)**
 
 ---
 
